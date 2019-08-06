@@ -1,0 +1,50 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+.board {
+  width: 72%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  background-color: grey;
+}
+
+.hidden {
+  display: none;
+}
+
+.flash {
+  width: 72vw;
+  height: 72vh;
+  position: fixed;
+  z-index: 100;
+  top: 14vh;
+  left: 14vh;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash__message {
+  font-size: 5rem;
+}
